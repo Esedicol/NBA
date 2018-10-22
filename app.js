@@ -29,6 +29,7 @@ app.get('/nba', nba.findAllPlayers);
 app.get('/nba/total', nba.totalPlayers);
 app.get('/nba/votes', nba.findTotalVotes);
 app.get('/nba/:id', nba.findOne);
+app.get('/nba/:team', nba.sameTeam)
 
 // --------------------- post --------------------- //
 app.post('/nba',nba.addPlayer);

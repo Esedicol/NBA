@@ -23,7 +23,7 @@ function getByValue(array, id) {
     return result ? result[0] : null; // or undefined
 }
 
-function sameTeam(array, t) {
+function sameTeamTotal(array, t) {
 
     var total = 0;
     for (var i = 0 ; i < array.length ; i++) {
@@ -78,19 +78,19 @@ router.totalPlayers = (req, res) => {
         res.send(getTotalPlayers(data));
     });
 }
-/*
-router.totalPlayersOnATeam = (req, res) => {
+
+router.sameTeam = (req, res) => {
 
     res.setHeader('Content-Type', 'application/json');
 
-    data.find(function(err, players) {
+    data.find({"team" : req.params.team}, function(err, players) {
         if (err)
             res.send({message : 'Failed to count players'});
         else
-            res.send(getPlayersOnSameTeam(data, req.params.team));
+            res.send(sameTeamTotal(data, "team"));
     });
 }
-*/
+
 
 router.findOne = (req, res) => {
 

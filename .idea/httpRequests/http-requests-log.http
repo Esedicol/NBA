@@ -1,3 +1,11 @@
+GET http://localhost:3000/nba/Lakers
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-10-23T123215.200.json
+
+###
+
 GET http://localhost:3000/nba/5bce13649b7e72ecbd00d85b
 Accept: */*
 Cache-Control: no-cache
