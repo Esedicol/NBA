@@ -1,0 +1,79 @@
+[
+  {
+    "season_played": 0,
+    "champs": 4,
+    "_id": "5bce13649b7e72ecbd00d85b",
+    "name": "Lebron James",
+    "team": "Lakers",
+    "seasons_played": 16
+  },
+  {
+    "season_played": 0,
+    "champs": 3,
+    "_id": "5bce13889b7e72ecbd00d85c",
+    "name": "Kobe Bryant",
+    "team": "Lakers",
+    "seasons_played": 14
+  },
+  {
+    "season_played": 0,
+    "champs": 0,
+    "_id": "5bce13b19b7e72ecbd00d85d",
+    "name": "Karl Anthony Towns",
+    "team": "Timberwolves",
+    "seasons_played": 3
+  },
+  {
+    "season_played": 0,
+    "champs": 2,
+    "_id": "5bce13ec9b7e72ecbd00d85e",
+    "name": "Kevin Durant",
+    "team": "Warriors",
+    "seasons_played": 10
+  },
+  {
+    "season_played": 0,
+    "champs": 5,
+    "_id": "5bce14049b7e72ecbd00d85f",
+    "name": "Stephen Curry",
+    "team": "Warriors",
+    "seasons_played": 8
+  },
+  {
+    "season_played": 0,
+    "champs": 1,
+    "_id": "5bce141d9b7e72ecbd00d860",
+    "name": "Derrick Rose",
+    "team": "Bulls",
+    "seasons_played": 7
+  },
+  {
+    "season_played": 0,
+    "champs": 0,
+    "_id": "5bce3bed9b7e72ecbd00d861",
+    "teams": []
+  },
+  {
+    "season_played": 0,
+    "champs": 0,
+    "_id": "5bce4c4c9b7e72ecbd00d863",
+    "champions": [
+      {
+        "team": "warriors",
+        "year": 2017
+      },
+      {
+        "team": "warriors",
+        "year": 2016
+      },
+      {
+        "team": "cavaliers",
+        "year": 2015
+      },
+      {
+        "team": "boston",
+        "year": 2014
+      }
+    ]
+  }
+]

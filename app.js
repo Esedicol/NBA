@@ -7,11 +7,11 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
-const donations = require("./routes/donations");
+const nba = require("./routes/donations");
 
 var app = express();
 
-// view engine setup
+// --------------------- view engine setup --------------------- //
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
@@ -24,16 +24,20 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
-//
-app.get('/nba', donations.findAllPlayers);
-app.get('/nba/votes', donations.findTotalVotes);
-app.get('/nba/:id', donations.findOne);
+// --------------------- get --------------------- //
+app.get('/nba', nba.findAllPlayers);
+app.get('/nba/total', nba.totalPlayers);
+app.get('/nba/votes', nba.findTotalVotes);
+app.get('/nba/:id', nba.findOne);
 
-app.post('/nba',donations.addPlayer);
+// --------------------- post --------------------- //
+app.post('/nba',nba.addPlayer);
 
-app.put('/nba/:id/vote', donations.incrementUpvotes);
+// --------------------- put --------------------- //
+app.put('/nba/:id/vote', nba.incrementUpvotes);
 
-app.delete('/nba/:id', donations.deleteDonation);
+// --------------------- delete --------------------- //
+app.delete('/nba/:id', nba.deleteDonation);
 
 
 

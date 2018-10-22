@@ -29,16 +29,36 @@ function getTotalVotes(array) {
     return totalVotes;
 }
 
+function getTotalPlayers(array) {
+    let total = array.length;
+    return 'total players is :' + total;
+}
+
+
 //  --------------------- methods --------------------- //
 router.findAllPlayers = (req, res) => {
     // Return a JSON representation of our list
     res.setHeader('Content-Type', 'application/json');
 
-    data.find(function(err, donations) {
+    data.find(function(err, players) {
         if (err)
             res.send({message : 'Failed to process command. Try again pls.'});
 
-        res.send(JSON.stringify(donations,null,5));
+        else
+        res.send(JSON.stringify(players,null,5));
+
+    });
+}
+
+router.totalPlayers = (req, res) => {
+
+    res.setHeader('Content-Type', 'application/json');
+
+    data.find(function(err, players) {
+    if (err)
+        res.send({message : 'Failed to count players'});
+    else
+        res.send(getTotalPlayers(data));
     });
 }
 

@@ -1,3 +1,115 @@
+GET http://localhost:3000/nba
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-10-22T114044.200.json
+
+###
+
+GET http://localhost:3000/nba/total
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-10-22T114041.200.json
+
+###
+
+GET http://localhost:3000/nba
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-10-22T113739.200.json
+
+###
+
+GET http://localhost:3000/nba/total
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-10-22T113736.500.json
+
+###
+
+GET http://localhost:3000/nba/total
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-10-22T113734.500.json
+
+###
+
+GET http://localhost:3000/nba
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-10-22T113121.200.json
+
+###
+
+GET http://localhost:3000/nba
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-10-22T113055.200.json
+
+###
+
+GET http://localhost:3000/nba
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-10-22T113024.200.json
+
+###
+
+GET http://localhost:3000/nba
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-10-22T113010.200.json
+
+###
+
+GET http://localhost:3000/nba
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-10-22T112939.200.json
+
+###
+
+GET http://localhost:3000/nba
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-10-22T112848.200.json
+
+###
+
+GET http://localhost:3000/nba
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-10-22T112706.200.json
+
+###
+
+GET http://localhost:3000/nba
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-10-22T111709.200.json
+
+###
+
+GET http://localhost:3000/donations
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-10-22T111704.404.html
+
+###
+
 GET http://localhost:3000/donations
 Accept: */*
 Cache-Control: no-cache
