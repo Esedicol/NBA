@@ -4,7 +4,6 @@ let router = express.Router();
 
 // --------------------- connect to mongo database --------------------- //
 let mongoose = require('mongoose');
-
 mongoose.connect('mongodb://localhost:27017/nba');
 
 let db = mongoose.connection;
