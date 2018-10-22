@@ -24,16 +24,16 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
-// Our Custom Donation Web App Routes
-app.get('/donations', donations.findAll);
-app.get('/donations/votes', donations.findTotalVotes);
-app.get('/donations/:id', donations.findOne);
+//
+app.get('/nba', donations.findAllPlayers);
+app.get('/nba/votes', donations.findTotalVotes);
+app.get('/nba/:id', donations.findOne);
 
-app.post('/donations',donations.addPlayer);
+app.post('/nba',donations.addPlayer);
 
-app.put('/donations/:id/vote', donations.incrementUpvotes);
+app.put('/nba/:id/vote', donations.incrementUpvotes);
 
-app.delete('/donations/:id', donations.deleteDonation);
+app.delete('/nba/:id', donations.deleteDonation);
 
 
 

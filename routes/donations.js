@@ -30,9 +30,16 @@ function getTotalVotes(array) {
 }
 
 //  --------------------- methods --------------------- //
-router.findAll = (req, res) => {
+router.findAllPlayers = (req, res) => {
+    // Return a JSON representation of our list
     res.setHeader('Content-Type', 'application/json');
-    res.send(JSON.stringify(data,null,5));
+
+    data.find(function(err, donations) {
+        if (err)
+            res.send({message : 'Failed to process command. Try again pls.'});
+
+        res.send(JSON.stringify(donations,null,5));
+    });
 }
 
 router.findOne = (req, res) => {
