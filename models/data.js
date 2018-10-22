@@ -1,4 +1,4 @@
-/*
+
 let mongoose = require('mongoose');
 
 
@@ -11,13 +11,14 @@ let NBASchema = new mongoose.Schema({
     },
     { collection: 'nba' });
 
-module.exports = mongoose.model('Donation', NBASchema);
-*/
+module.exports = mongoose.model('NBA', NBASchema);
 
-const donations = [
-    {id: 1000000, paymenttype: 'PayPal', amount: 1600, upvotes: 1},
-    {id: 1000001, paymenttype: 'Direct', amount: 1100, upvotes: 2},
-    {id: 1000002, paymenttype: 'Visa', amount: 1000, upvotes: 1}
+/*
+const data = [
+    {id: 1000000, name : 'Lebron',   team: 'Cavs',       champions: 1},
+    {id: 1000001, name : 'Kobe',     team: 'Lakers',     champions: 2},
+    {id: 1000002, name : 'Stephen',  team: 'Warriors',   champions: 1}
 ];
 
-module.exports = donations;
+module.exports = data;
+*/

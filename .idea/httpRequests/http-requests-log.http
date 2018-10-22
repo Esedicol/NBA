@@ -1,0 +1,48 @@
+GET http://localhost:3000/donations/1000000
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-10-22T103957.200.json
+
+###
+
+DELETE http://localhost:3000/donations/1000000
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-10-22T103950.200.json
+
+###
+
+GET http://localhost:3000/donations/1000000
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-10-22T103943-1.200.json
+
+###
+
+GET http://localhost:3000/donations/1000000
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-10-22T103943.200.json
+
+###
+
+GET http://localhost:3000/donations/1000000
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-10-22T103942.200.json
+
+###
+
+GET http://localhost:3000/donations
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-10-22T093302.200.json
+
+###
+

@@ -1,26 +1,24 @@
-let donations = require('../models/donations');
+let data = require('../models/data');
 let express = require('express');
 let router = express.Router();
 
-router.findAll = (req, res) => {
-    // Return a JSON representation of our list
-    res.setHeader('Content-Type', 'application/json');
-    res.send(JSON.stringify(donations,null,5));
-}
+// --------------------- connect to mongo database --------------------- //
+let mongoose = require('mongoose');
 
-router.findOne = (req, res) => {
+mongoose.connect('mongodb://localhost:27017/nba');
 
-    res.setHeader('Content-Type', 'application/json');
+let db = mongoose.connection;
 
-    var donation = getByValue(donations,req.params.id);
+db.on('error', function (err) {
+    console.log('Unable to Connect to [ ' + db.name + ' ]', err);
+});
 
-    if (donation != null)
-        res.send(JSON.stringify(donation,null,5));
-    else
-        res.send('Donation NOT Found!!');
+db.once('open', function () {
+    console.log('Successfully Connected to [ ' + db.name + ' ]');
+});
 
-}
 
+// --------------------- functions --------------------- //
 function getByValue(array, id) {
     var result  = array.filter(function(obj){return obj.id == id;} );
     return result ? result[0] : null; // or undefined
@@ -32,23 +30,45 @@ function getTotalVotes(array) {
     return totalVotes;
 }
 
-router.addDonation = (req, res) => {
+//  --------------------- methods --------------------- //
+router.findAll = (req, res) => {
+    res.setHeader('Content-Type', 'application/json');
+    res.send(JSON.stringify(data,null,5));
+}
+
+router.findOne = (req, res) => {
+
+    res.setHeader('Content-Type', 'application/json');
+
+    var id = getByValue(data,req.params.id);
+
+    if (id != null)
+        res.send(JSON.stringify(id,null,5));
+    else
+        res.send('Donation NOT Found!!');
+
+}
+
+
+router.addPlayer = (req, res) => {
     //Add a new donation to our list
     var id = Math.floor((Math.random() * 1000000) + 1); //Randomly generate an id
-    var currentSize = donations.length;
+    var currentSize = data.length;
 
-    donations.push({"id" : id, "paymenttype" : req.body.paymenttype, "amount" : req.body.amount, "upvotes" : 0});
+    data.push({"id" : id, "paymenttype" : req.body.paymenttype, "amount" : req.body.amount, "upvotes" : 0});
 
-    if((currentSize + 1) == donations.length)
+    if((currentSize + 1) == data.length)
         res.json({ message: 'Donation Added Successfully!'});
     else
         res.json({ message: 'Donation NOT Added!'});
 }
 
+
+
 router.incrementUpvotes = (req, res) => {
     // Find the relevant donation based on params id passed in
     // Add 1 to upvotes property of the selected donation based on its id
-    var donation = getByValue(donations,req.params.id);
+    var donation = getByValue(data,req.params.id);
 
     if (donation != null) {
         donation.upvotes += 1;
@@ -61,13 +81,13 @@ router.incrementUpvotes = (req, res) => {
 
 router.deleteDonation = (req, res) => {
     //Delete the selected donation based on its id
-    var donation = getByValue(donations,req.params.id);
-    var index = donations.indexOf(donation);
+    var donation = getByValue(data,req.params.id);
+    var index = data.indexOf(donation);
 
-    var currentSize = donations.length;
-    donations.splice(index, 1);
+    var currentSize = data.length;
+    data.splice(index, 1);
 
-    if((currentSize - 1) == donations.length)
+    if((currentSize - 1) == data.length)
         res.json({ message: 'Donation Deleted!'});
     else
         res.json({ message: 'Donation NOT Deleted!'});
@@ -75,7 +95,7 @@ router.deleteDonation = (req, res) => {
 
 router.findTotalVotes = (req, res) => {
 
-    let votes = getTotalVotes(donations);
+    let votes = getTotalVotes(data);
     res.json({totalvotes : votes});
 }
 

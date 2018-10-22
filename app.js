@@ -29,7 +29,7 @@ app.get('/donations', donations.findAll);
 app.get('/donations/votes', donations.findTotalVotes);
 app.get('/donations/:id', donations.findOne);
 
-app.post('/donations',donations.addDonation);
+app.post('/donations',donations.addPlayer);
 
 app.put('/donations/:id/vote', donations.incrementUpvotes);
 
