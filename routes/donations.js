@@ -23,6 +23,23 @@ function getByValue(array, id) {
     return result ? result[0] : null; // or undefined
 }
 
+function sameTeam(array, t) {
+
+    var total = 0;
+    for (var i = 0 ; i < array.length ; i++) {
+        let x = array[i].team;
+        if(t == x) {
+            total += 1;
+            res.send({message : 'Failed to process command. Try again pls.'});
+        }
+        else {
+            res.send({message : 'Function failed'});
+        }
+    }
+
+}
+
+
 function getTotalVotes(array) {
     let totalVotes = 0;
     array.forEach(function(obj) { totalVotes += obj.upvotes; });
@@ -61,18 +78,30 @@ router.totalPlayers = (req, res) => {
         res.send(getTotalPlayers(data));
     });
 }
+/*
+router.totalPlayersOnATeam = (req, res) => {
+
+    res.setHeader('Content-Type', 'application/json');
+
+    data.find(function(err, players) {
+        if (err)
+            res.send({message : 'Failed to count players'});
+        else
+            res.send(getPlayersOnSameTeam(data, req.params.team));
+    });
+}
+*/
 
 router.findOne = (req, res) => {
 
     res.setHeader('Content-Type', 'application/json');
 
-    var id = getByValue(data,req.params.id);
-
-    if (id != null)
-        res.send(JSON.stringify(id,null,5));
-    else
-        res.send('Donation NOT Found!!');
-
+    data.find({ "_id" : req.params.id },function(err, players) {
+        if (err)
+            res.json({ message: 'Donation NOT Found!', errmsg : err } );
+        else
+            res.send(JSON.stringify(players,null,5));
+    });
 }
 
 

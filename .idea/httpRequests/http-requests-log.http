@@ -1,3 +1,27 @@
+GET http://localhost:3000/nba/5bce13649b7e72ecbd00d85b
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-10-23T122452.200.json
+
+###
+
+GET http://localhost:3000/nba/5bce13649b7e72ecbd00d85b
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-10-23T122451.200.json
+
+###
+
+GET http://localhost:3000/nba
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-10-22T115304.200.json
+
+###
+
 GET http://localhost:3000/nba
 Accept: */*
 Cache-Control: no-cache
