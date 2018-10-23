@@ -26,21 +26,26 @@ app.use('/users', usersRouter);
 
 // --------------------- get --------------------- //
 // Display everyting in database //
-app.get('/nba', nba.display);
+app.get('/nba', nba.getDisplay);
 
 // get total number of teams //
-app.get('/nba/total', nba.numberOfTeams);
+app.get('/nba/total', nba.getNumberOfTeams);
 
 // display chosen team //
-app.get('/nba/:id', nba.getATeam);
+app.get('/nba/:id', nba.getTeam);
+
+app.get('/nba/:id/players', nba.getPlayersOnTeam);
+
 
 
 // --------------------- post --------------------- //
 
-app.post('/nba',nba.addPlayer);
+
 
 // --------------------- put --------------------- //
-app.put('/nba/:id/vote', nba.incrementUpvotes);
+app.put('/nba/:id/win', nba.putChamps);
+app.put('/nba/:id/season', nba.putSeason);
+
 
 // --------------------- delete --------------------- //
 app.delete('/nba/:id', nba.deleteTeam);
