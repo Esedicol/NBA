@@ -1,0 +1,13 @@
+{
+  "players": [
+    "{ name: 'Lebron James', seasons_played: 16 }\n",
+    "{ name: 'Kobe Bryant', seasons_played: 14 }\n",
+    "{ name: 'Lonzo Ball', seasons_played: 16 }\n",
+    "{ name: 'Stephen Curry', seasons_played: 10 }\n",
+    "{ name: 'Kevin Durant', seasons_played: 11 }\n",
+    "{ name: 'Khlay Thompson', seasons_played: 8 }\n",
+    "{ name: 'Jordan Clarkson', seasons_played: 4 }\n",
+    "{ name: 'Kevin Love', seasons_played: 10 }\n",
+    "{ name: 'Kyrie Irving', seasons_played: 8 }\n"
+  ]
+}

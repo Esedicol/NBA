@@ -19,7 +19,7 @@ db.once('open', function () {
 
 // --------------------- functions --------------------- //
 function getByValue(array, id) {
-    var result  = array.filter(function(obj){return obj.id == id;} );
+    var result  = array.filter(function(obj){return obj.id;} );
     return result ? result[0] : null; // or undefined
 }
 
@@ -39,26 +39,25 @@ function sameTeamTotal(array, t) {
 
 }
 
+
 function getTotalVotes(array) {
-    let totalVotes = 0;
-    array.forEach(function(obj) { totalVotes += obj.upvotes; });
+
+    array.forEach(function(obj) { var totalVotes = obj.player });
     return totalVotes;
 }
 
+router.findTotalVotes = (req, res) => {
 
-function getTotalVotes(array) {
-    let totalVotes = 0;
-    array.forEach(function(obj) { totalVotes += obj.player.name; });
-    return totalVotes;
+    Data.find(function(err, donations) {
+        if (err)
+            res.send(err);
+        else
+            res.json({ totalvotes : getTotalVotes(donations) });
+    });
 }
 
 
-function totalTeams(array) {
-    var total = 0;
-    for ( var i = 0; i < array.length; i++)
-        total += 1;
-    return 'Total number of teams in the Database is => ' + total;
-}
+
 
 
 //  --------------------- get methods --------------------- //
@@ -76,36 +75,16 @@ router.getDisplay = (req, res) => {
     });
 }
 
-router.getPlayers = (req, res) => {
-    // Return a JSON representation of our list
-    res.setHeader('Content-Type', 'application/json');
-
-    Data.find(function(err, players) {
-        if (err)
-            res.send({message : 'Failed to process command. Try again pls.'});
-
-        else
-            res.send({message : totalTeams(players)});
-
-    });
-}
-
-function totalTeams(array) {
-    var total = 0;
-    for ( var i = 0; i < array.length; i++)
-        total += 1;
-    return 'Total number of teams in the Database is => ' + total;
-}
-
 router.getNumberOfTeams = (req, res) => {
 
     res.setHeader('Content-Type', 'application/json');
 
     Data.find(function(err, players) {
-    if (err)
-        res.send({message : 'Failed to count players'});
-    else
-        res.json({ total : totalTeams(players)});
+        if (err)
+            res.send({message : 'Failed to count players'});
+        else
+            res.send('Total number of teams in the Database is => ' + players.length);
+
     });
 }
 
@@ -121,22 +100,46 @@ router.getTeam = (req, res) => {
     });
 }
 
-function pl(array) {
-    let p = array['player'];
-    for ( var i = 0; i < p.length; i++)
-
-    return 'Total number of teams in the Database is => ' + p[i].name + p[i].seasons_played;
+function getPlayer(array) {
+    var data = [];
+    for ( var i = 0; i < array.length; i++)
+    {
+        for ( var j = 0; j < array.length; j++) {
+            data.push(array[i].player[j]).toString();
+        }
+    }
+    return data;
 }
 
-router.getPlayersOnTeam = (req, res) => {
+router.getAllPlayers = (req, res) => {
 
     res.setHeader('Content-Type', 'application/json');
 
-    Data.find({ "_id" : req.params.id },function(err, players) {
+    Data.find(function(err, players) {
         if (err)
-            res.json({ message: 'Team not found!', errmsg : err } );
+            res.send({message : 'Failed to count players'});
         else
-            res.json({ p : pl(players)})
+            res.send(JSON.stringify(getPlayer(players),null,5));
+    });
+}
+
+
+router.getRevenue = (req, res) => {
+
+    res.setHeader('Content-Type', 'application/json');
+
+    Data.find({ "_id" : req.params.id },function(err, team) {
+        if (err)
+            res.json({ message: 'Revenue NOT Found!', errmsg : err } );
+        else
+            var d = [];
+            for(var i = 0; i < team.length; i++)
+            {
+                d = team[i];
+                res.send(d);
+            }
+
+
     });
 }
 
@@ -190,11 +193,6 @@ router.deleteTeam = (req, res) => {
     });
 }
 
-router.findTotalVotes = (req, res) => {
-
-    let votes = getTotalVotes(Data);
-    res.json({totalvotes : votes});
-}
 
 
 
@@ -210,6 +208,23 @@ router.addPlayer = (req, res) => {
                     res.json({message: 'Player NOT Added!', errmsg: err});
                 else
                     res.json({message: 'Player Successfully Added!', data: donation});
+            });
+        }
+    });
+}
+
+router.incrementUpvotes = (req, res) => {
+
+    Data.findById(req.params.id, function(err,donation) {
+        if (err)
+            res.json({ message: 'Donation NOT Found!', errmsg : err } );
+        else {
+            donation.champs += 1;
+            donation.save(function (err) {
+                if (err)
+                    res.json({ message: 'Donation NOT UpVoted!', errmsg : err } );
+                else
+                    res.json({ message: 'Donation Successfully Upvoted!', data: donation });
             });
         }
     });

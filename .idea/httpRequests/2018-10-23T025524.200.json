@@ -1,4 +1,0 @@
-{
-  "message": "Well done!!",
-  "data": "{\n     \"_id\": \"5bcefdc69b7e72ecbd00d868\",\n     \"team\": \"Lakers\",\n     \"player\": [\n          {\n               \"name\": \"Lebron James\",\n               \"seasons_played\": 16\n          },\n          {\n               \"name\": \"Kobe Bryant\",\n               \"seasons_played\": 14\n          },\n          {\n               \"name\": \"Lonzo Ball\",\n               \"seasons_played\": 16\n          }\n     ],\n     \"champs\": 16\n}"
-}

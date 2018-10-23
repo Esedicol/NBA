@@ -34,7 +34,10 @@ app.get('/nba/total', nba.getNumberOfTeams);
 // display chosen team //
 app.get('/nba/:id', nba.getTeam);
 
-app.get('/nba/:id/players', nba.getPlayersOnTeam);
+// get all players on a team //
+app.get('/player', nba.getAllPlayers);
+app.get('revenue/:id', nba.getRevenue);
+
 
 
 
@@ -67,8 +70,5 @@ app.use(function(err, req, res, next) {
     res.status(err.status || 500);
     res.render('error');
 });
-
-
-
 
 module.exports = app;

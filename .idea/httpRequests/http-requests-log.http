@@ -1,113 +1,81 @@
-GET http://localhost:3000/nba/5bcefdc69b7e72ecbd00d868
+GET  http://localhost:3000/nba
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
 {"name" : "Emmanuel" , "seasons_played" : 2}
 
-<> 2018-10-23T040737.200.json
+<> 2018-10-24T121807.200.json
 
 ###
 
-GET http://localhost:3000/nba/5bcefdc69b7e72ecbd00d868
+GET  http://localhost:3000/player
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
 {"name" : "Emmanuel" , "seasons_played" : 2}
 
+<> 2018-10-24T121717.200.json
+
 ###
 
-GET http://localhost:3000/nba/5bcefdc69b7e72ecbd00d868
+GET  http://localhost:3000/player
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
 {"name" : "Emmanuel" , "seasons_played" : 2}
 
+<> 2018-10-24T121636.200.json
+
 ###
 
-GET http://localhost:3000/nba/5bcefdc69b7e72ecbd00d868
+GET  http://localhost:3000/player
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
 {"name" : "Emmanuel" , "seasons_played" : 2}
 
+<> 2018-10-24T121530.200.json
+
 ###
 
-GET http://localhost:3000/nba/5bcefdc69b7e72ecbd00d868
+GET  http://localhost:3000/player
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
 {"name" : "Emmanuel" , "seasons_played" : 2}
 
+<> 2018-10-24T121343.200.json
+
 ###
 
-GET http://localhost:3000/nba/5bcefdc69b7e72ecbd00d868/players
+GET  http://localhost:3000/player
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
 {"name" : "Emmanuel" , "seasons_played" : 2}
 
+<> 2018-10-24T121342.200.json
+
 ###
 
-GET http://localhost:3000/nba/5bcefdc69b7e72ecbd00d868/players
+GET  http://localhost:3000/player
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
 {"name" : "Emmanuel" , "seasons_played" : 2}
 
-###
-
-GET http://localhost:3000/nba/5bcefdc69b7e72ecbd00d868
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Emmanuel" , "seasons_played" : 2}
-
-<> 2018-10-23T040230.200.json
+<> 2018-10-24T121135.200.json
 
 ###
 
-GET http://localhost:3000/nba
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Emmanuel" , "seasons_played" : 2}
-
-<> 2018-10-23T040221.200.json
-
-###
-
-GET http://localhost:3000/nba
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Emmanuel" , "seasons_played" : 2}
-
-<> 2018-10-23T035728.200.json
-
-###
-
-GET http://localhost:3000/nba/total
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Emmanuel" , "seasons_played" : 2}
-
-<> 2018-10-23T033650.200.json
-
-###
-
-GET http://localhost:3000/nba/total
+GET  http://localhost:3000/player
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
@@ -116,7 +84,7 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:3000/nba/total
+GET  http://localhost:3000/player
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
@@ -125,7 +93,7 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:3000/nba/total
+GET  http://localhost:3000/player
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
@@ -134,7 +102,7 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:3000/nba/total
+GET  http://localhost:3000/player
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
@@ -143,45 +111,40 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:3000/nba
+GET  http://localhost:3000/player
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
 {"name" : "Emmanuel" , "seasons_played" : 2}
 
-<> 2018-10-23T033144.200.json
+<> 2018-10-23T115114.200.json
 
 ###
 
-GET http://localhost:3000/nba
+GET  http://localhost:3000/player
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
 {"name" : "Emmanuel" , "seasons_played" : 2}
 
+<> 2018-10-23T115113.200.json
+
 ###
 
-GET http://localhost:3000/nba
+GET  http://localhost:3000/player
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
 {"name" : "Emmanuel" , "seasons_played" : 2}
 
-###
-
-GET http://localhost:3000/nba
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Emmanuel" , "seasons_played" : 2}
+<> 2018-10-23T115017.200.json
 
 ###
 
-GET http://localhost:3000/nba/total
+GET  http://localhost:3000/player
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
@@ -190,7 +153,7 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:3000/nba/total
+GET  http://localhost:3000/player
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
@@ -199,7 +162,172 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:3000/nba/total
+GET  http://localhost:3000/player
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name" : "Emmanuel" , "seasons_played" : 2}
+
+<> 2018-10-23T114843.200.json
+
+###
+
+GET  http://localhost:3000/player
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name" : "Emmanuel" , "seasons_played" : 2}
+
+<> 2018-10-23T114709.200.json
+
+###
+
+GET  http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/win
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name" : "Emmanuel" , "seasons_played" : 2}
+
+<> 2018-10-23T114621.404.html
+
+###
+
+GET  http://localhost:3000/nba
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name" : "Emmanuel" , "seasons_played" : 2}
+
+<> 2018-10-23T114611.200.json
+
+###
+
+GET  http://localhost:3000/nba/5bcf7c2b9b7e72ecbd00d86d
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name" : "Emmanuel" , "seasons_played" : 2}
+
+<> 2018-10-23T114601.200.json
+
+###
+
+GET  http://localhost:3000/nba/5bcf7c2b9b7e72ecbd00d86d/win
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name" : "Emmanuel" , "seasons_played" : 2}
+
+<> 2018-10-23T114558.404.html
+
+###
+
+GET  http://localhost:3000/nba/5bcf7c2b9b7e72ecbd00d86d
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name" : "Emmanuel" , "seasons_played" : 2}
+
+<> 2018-10-23T114548.200.json
+
+###
+
+GET  http://localhost:3000/nba/5bcf7c2b9b7e72ecbd00d86d/win
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name" : "Emmanuel" , "seasons_played" : 2}
+
+<> 2018-10-23T114546.404.html
+
+###
+
+GET  http://localhost:3000/nba/5bcf7c2b9b7e72ecbd00d86d/win
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name" : "Emmanuel" , "seasons_played" : 2}
+
+<> 2018-10-23T114540.404.html
+
+###
+
+GET  http://localhost:3000/nba/5bcf7c2b9b7e72ecbd00d86d/win
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name" : "Emmanuel" , "seasons_played" : 2}
+
+<> 2018-10-23T114425.404.html
+
+###
+
+GET  http://localhost:3000/nba
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name" : "Emmanuel" , "seasons_played" : 2}
+
+<> 2018-10-23T113649.200.json
+
+###
+
+GET  http://localhost:3000/revenue/5bcf7bba9b7e72ecbd00d86c
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name" : "Emmanuel" , "seasons_played" : 2}
+
+<> 2018-10-23T112810.404.html
+
+###
+
+GET  http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name" : "Emmanuel" , "seasons_played" : 2}
+
+<> 2018-10-23T112751.200.json
+
+###
+
+GET  http://localhost:3000/nba
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name" : "Emmanuel" , "seasons_played" : 2}
+
+<> 2018-10-23T112743.200.json
+
+###
+
+GET  http://localhost:3000/player
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"name" : "Emmanuel" , "seasons_played" : 2}
+
+<> 2018-10-23T112456.200.json
+
+###
+
+GET  http://localhost:3000/player
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
@@ -208,305 +336,201 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:3000/nba/total
+GET  http://localhost:3000/player
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
 {"name" : "Emmanuel" , "seasons_played" : 2}
+
+<> 2018-10-23T112302.200.json
 
 ###
 
-GET http://localhost:3000/nba/total
+GET  http://localhost:3000/player
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
 {"name" : "Emmanuel" , "seasons_played" : 2}
+
+<> 2018-10-23T112300.200.json
 
 ###
 
-GET http://localhost:3000/nba
+GET  http://localhost:3000/revenue/5bcf7bba9b7e72ecbd00d86c
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
 {"name" : "Emmanuel" , "seasons_played" : 2}
 
-<> 2018-10-23T033020.200.json
+<> 2018-10-23T111519.404.html
 
 ###
 
-GET http://localhost:3000/nba
+GET  http://localhost:3000/revenue/5bcf7bba9b7e72ecbd00d86c
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
 {"name" : "Emmanuel" , "seasons_played" : 2}
 
-<> 2018-10-23T032855.200.json
+<> 2018-10-23T111459.404.html
 
 ###
 
-GET http://localhost:3000/nba/total
+GET  http://localhost:3000/revenue/5bcf7bba9b7e72ecbd00d86c
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
 {"name" : "Emmanuel" , "seasons_played" : 2}
 
-<> 2018-10-23T032848.200.json
+<> 2018-10-23T111446.404.html
 
 ###
 
-GET http://localhost:3000/nba/total
+GET  http://localhost:3000/revenue/5bcf7bba9b7e72ecbd00d86c
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
 {"name" : "Emmanuel" , "seasons_played" : 2}
 
-<> 2018-10-23T032834.200.json
+<> 2018-10-23T111351.404.html
 
 ###
 
-GET http://localhost:3000/nba/player
+GET  http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
 {"name" : "Emmanuel" , "seasons_played" : 2}
 
-<> 2018-10-23T032802.200.json
+<> 2018-10-23T111326.200.json
 
 ###
 
-GET http://localhost:3000/nba/player
+GET  http://localhost:3000/nba
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
 {"name" : "Emmanuel" , "seasons_played" : 2}
 
-<> 2018-10-23T032801.200.json
+<> 2018-10-23T111320.200.json
 
 ###
 
-GET http://localhost:3000/nba/player
+GET  http://localhost:3000/player
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
 {"name" : "Emmanuel" , "seasons_played" : 2}
 
-<> 2018-10-23T032502.200.json
+<> 2018-10-23T111024.200.json
 
 ###
 
-PUT http://localhost:3000/nba/5bcefdc69b7e72ecbd00d868/win
+GET  http://localhost:3000/p
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
 {"name" : "Emmanuel" , "seasons_played" : 2}
 
-<> 2018-10-23T025822.200.html
+<> 2018-10-23T111001.200.json
 
 ###
 
-PUT http://localhost:3000/nba/5bcefdc69b7e72ecbd00d868/win
+GET  http://localhost:3000/nba/
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
 {"name" : "Emmanuel" , "seasons_played" : 2}
 
-<> 2018-10-23T025759.200.json
+<> 2018-10-23T110958.200.json
 
 ###
 
-PUT http://localhost:3000/nba/5bcefdc69b7e72ecbd00d868/win
+GET  http://localhost:3000/nba/players
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
 {"name" : "Emmanuel" , "seasons_played" : 2}
 
-<> 2018-10-23T025733.200.json
+<> 2018-10-23T110905.200.json
 
 ###
 
-PUT http://localhost:3000/nba/5bcefdc69b7e72ecbd00d868/win
+GET  http://localhost:3000/nba/total
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
 {"name" : "Emmanuel" , "seasons_played" : 2}
 
-<> 2018-10-23T025714.200.json
+<> 2018-10-23T110901.200.json
 
 ###
 
-PUT http://localhost:3000/nba/5bcefdc69b7e72ecbd00d868/win
+GET  http://localhost:3000/nba/total
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
 {"name" : "Emmanuel" , "seasons_played" : 2}
+
+<> 2018-10-23T110722.200.json
 
 ###
 
-PUT http://localhost:3000/nba/5bcefdc69b7e72ecbd00d868/win
+GET  http://localhost:3000/nba/total
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
 {"name" : "Emmanuel" , "seasons_played" : 2}
 
-<> 2018-10-23T025646.200.json
+<> 2018-10-23T110712.200.json
 
 ###
 
-PUT http://localhost:3000/nba/5bcefdc69b7e72ecbd00d868/win
+GET  http://localhost:3000/nba/total
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
 {"name" : "Emmanuel" , "seasons_played" : 2}
 
-<> 2018-10-23T025524.200.json
+<> 2018-10-23T110708-2.200.json
 
 ###
 
-PUT http://localhost:3000/nba/5bcefdc69b7e72ecbd00d868/win
+GET  http://localhost:3000/nba/total
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
 {"name" : "Emmanuel" , "seasons_played" : 2}
 
-<> 2018-10-23T025517.200.json
+<> 2018-10-23T110708-1.200.json
 
 ###
 
-PUT http://localhost:3000/nba/5bcefdc69b7e72ecbd00d868/win
+GET  http://localhost:3000/nba/total
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
 {"name" : "Emmanuel" , "seasons_played" : 2}
 
-<> 2018-10-23T025439.200.json
-
-###
-
-PUT http://localhost:3000/nba/5bcefdc69b7e72ecbd00d868/win
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Emmanuel" , "seasons_played" : 2}
-
-<> 2018-10-23T025301.200.json
-
-###
-
-PUT http://localhost:3000/nba/5bcefdc69b7e72ecbd00d868/win
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Emmanuel" , "seasons_played" : 2}
-
-<> 2018-10-23T025222.200.json
-
-###
-
-PUT http://localhost:3000/nba/5bcefdc69b7e72ecbd00d868/win
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Emmanuel" , "seasons_played" : 2}
-
-<> 2018-10-23T024859.200.html
-
-###
-
-PUT http://localhost:3000/nba/5bcefdc69b7e72ecbd00d868/win
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Emmanuel" , "seasons_played" : 2}
-
-<> 2018-10-23T024749.200.json
-
-###
-
-PUT http://localhost:3000/nba/5bcefdc69b7e72ecbd00d868/win
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Emmanuel" , "seasons_played" : 2}
-
-<> 2018-10-23T024747.200.json
-
-###
-
-PUT http://localhost:3000/nba/5bcefdc69b7e72ecbd00d868/win
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Emmanuel" , "seasons_played" : 2}
-
-<> 2018-10-23T024724.200.json
-
-###
-
-PUT http://localhost:3000/nba/5bcefdc69b7e72ecbd00d868/win
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Emmanuel" , "seasons_played" : 2}
-
-<> 2018-10-23T024505.200.json
-
-###
-
-GET http://localhost:3000/nba
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Emmanuel" , "seasons_played" : 2}
-
-<> 2018-10-23T024313.200.json
-
-###
-
-POST http://localhost:3000/nba
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Emmanuel" , "seasons_played" : 2}
-
-<> 2018-10-23T023119.404.html
-
-###
-
-GET http://localhost:3000/nba
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Emmanuel" , "seasons_played" : 2}
-
-<> 2018-10-23T023107.200.json
+<> 2018-10-23T110708.200.json
 
 ###
 
