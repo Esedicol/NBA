@@ -1,0 +1,24 @@
+[
+  {
+    "_id": "5bcefb0e9b7e72ecbd00d866",
+    "teamName": "Lakers",
+    "Players": [
+      {
+        "name": "Lebron James",
+        "team": "Lakers",
+        "seasons_played": 16
+      },
+      {
+        "name": "Kobe Bryant",
+        "team": "Lakers",
+        "seasons_played": 14
+      },
+      {
+        "name": "Lonzo Ball",
+        "team": "Lakers",
+        "seasons_played": 16
+      }
+    ],
+    "champs": 6
+  }
+]

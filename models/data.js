@@ -3,13 +3,13 @@ let mongoose = require('mongoose');
 
 let NBASchema = new mongoose.Schema(
     {
-        name : String,
         team : String,
-        season_played : Number,
+        player : [ {name : String, seasons_played : Number} ],
         champs: Number
     },
 
-    { collection: 'nba' });
+    { collection: 'nba' }
+    );
 
 module.exports = mongoose.model('NBA', NBASchema);
 

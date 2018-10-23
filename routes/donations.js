@@ -1,4 +1,4 @@
-let data = require('../models/data');
+let Data = require('../models/data');
 let express = require('express');
 let router = express.Router();
 
@@ -39,25 +39,28 @@ function sameTeamTotal(array, t) {
 
 }
 
-
+// --------------------- get --------------------- //
 function getTotalVotes(array) {
     let totalVotes = 0;
     array.forEach(function(obj) { totalVotes += obj.upvotes; });
     return totalVotes;
 }
 
-function getTotalPlayers(array) {
-    let total = array.length;
-    return 'total players is :' + total;
+
+function totalTeams(array) {
+    var total = 0;
+    for ( var i = 0; i < array.length; i++)
+        total += 1;
+    return 'Total number of teams in the Database is => ' + total;
 }
 
 
 //  --------------------- methods --------------------- //
-router.findAllPlayers = (req, res) => {
+router.display = (req, res) => {
     // Return a JSON representation of our list
     res.setHeader('Content-Type', 'application/json');
 
-    data.find(function(err, players) {
+    Data.find(function(err, players) {
         if (err)
             res.send({message : 'Failed to process command. Try again pls.'});
 
@@ -67,55 +70,72 @@ router.findAllPlayers = (req, res) => {
     });
 }
 
-router.totalPlayers = (req, res) => {
+
+router.numberOfTeams = (req, res) => {
 
     res.setHeader('Content-Type', 'application/json');
 
-    data.find(function(err, players) {
+    Data.find(function(err, players) {
     if (err)
         res.send({message : 'Failed to count players'});
     else
-        res.send(getTotalPlayers(data));
-    });
-}
-
-router.sameTeam = (req, res) => {
-
-    res.setHeader('Content-Type', 'application/json');
-
-    data.find({"team" : req.params.team}, function(err, players) {
-        if (err)
-            res.send({message : 'Failed to count players'});
-        else
-            res.send(sameTeamTotal(data, "team"));
+        res.send(function(Data) {
+            for (var i = 0; i < Data.player[i]; i++) {
+                x += myObj.cars[i];
+            }
+        });
     });
 }
 
 
-router.findOne = (req, res) => {
+router.getATeam = (req, res) => {
 
     res.setHeader('Content-Type', 'application/json');
 
-    data.find({ "_id" : req.params.id },function(err, players) {
+    Data.find({ "_id" : req.params.id },function(err, players) {
         if (err)
-            res.json({ message: 'Donation NOT Found!', errmsg : err } );
+            res.json({ message: 'Team not found!', errmsg : err } );
         else
             res.send(JSON.stringify(players,null,5));
     });
 }
 
+/*
+router.numberOfPlayerInATeam = (req, res) => {
+
+    res.setHeader('Content-Type', 'application/json');
+
+    Data.find({ "_id" : req.params.id },function(err, players) {
+        if (err)
+            res.json({ message: 'Team not found!', errmsg : err } );
+        else
+            res.send(JSON.stringify(players,null,5));
+    });
+}
+*/
+
+
+
 
 router.addPlayer = (req, res) => {
-    //Add a new donation to our list
-    var id = Math.floor((Math.random() * 1000000) + 1); //Randomly generate an id
-    var currentSize = data.length;
 
-    data.push({"id" : id, "paymenttype" : req.body.paymenttype, "amount" : req.body.amount, "upvotes" : 0});
+    res.setHeader('Content-Type', 'application/json');
 
-    if((currentSize + 1) == data.length)
-        res.json({ message: 'Donation Added Successfully!'});
-    else
-        res.json({ message: 'Donation NOT Added!'});
+    var player = new Data();
+
+    player.name = req.body.name;
+    player.seasons_played = req.body.seasons_played;
+
+    player.save(function(err) {
+        if (err)
+            res.json({ message: 'Donation NOT Added!', errmsg : err } );
+        else
+            res.json({ message: 'Donation Successfully Added!', data : player });
+    });
+}
+
+router.addTeam = (req, res) => {
+
 }
 
 
@@ -123,7 +143,7 @@ router.addPlayer = (req, res) => {
 router.incrementUpvotes = (req, res) => {
     // Find the relevant donation based on params id passed in
     // Add 1 to upvotes property of the selected donation based on its id
-    var donation = getByValue(data,req.params.id);
+    var donation = getByValue(Data,req.params.id);
 
     if (donation != null) {
         donation.upvotes += 1;
@@ -134,23 +154,19 @@ router.incrementUpvotes = (req, res) => {
 
 }
 
-router.deleteDonation = (req, res) => {
-    //Delete the selected donation based on its id
-    var donation = getByValue(data,req.params.id);
-    var index = data.indexOf(donation);
+router.deleteTeam = (req, res) => {
 
-    var currentSize = data.length;
-    data.splice(index, 1);
-
-    if((currentSize - 1) == data.length)
-        res.json({ message: 'Donation Deleted!'});
-    else
-        res.json({ message: 'Donation NOT Deleted!'});
+    Data.findByIdAndRemove(req.params.id, function(err) {
+        if (err)
+            res.json({ message: 'Team NOT DELETED!', errmsg : err } );
+        else
+            res.json({ message: 'Team Successfully Deleted!'});
+    });
 }
 
 router.findTotalVotes = (req, res) => {
 
-    let votes = getTotalVotes(data);
+    let votes = getTotalVotes(Data);
     res.json({totalvotes : votes});
 }
 

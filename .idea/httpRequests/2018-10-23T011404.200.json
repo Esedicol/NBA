@@ -1,0 +1,21 @@
+[
+  {
+    "_id": "5bcefe099b7e72ecbd00d869",
+    "team": "Warriors",
+    "player": [
+      {
+        "name": "Stephen Curry",
+        "seasons_played": 10
+      },
+      {
+        "name": "Kevin Durant",
+        "seasons_played": 11
+      },
+      {
+        "name": "Khlay Thompson",
+        "seasons_played": 8
+      }
+    ],
+    "champs": 3
+  }
+]

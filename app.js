@@ -25,20 +25,25 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
 // --------------------- get --------------------- //
-app.get('/nba', nba.findAllPlayers);
-app.get('/nba/total', nba.totalPlayers);
-app.get('/nba/votes', nba.findTotalVotes);
-app.get('/nba/:id', nba.findOne);
-app.get('/nba/:team', nba.sameTeam)
+// Display everyting in database //
+app.get('/nba', nba.display);
+
+// get total number of teams //
+app.get('/nba/total', nba.numberOfTeams);
+
+// display chosen team //
+app.get('/nba/:id', nba.getATeam);
+
 
 // --------------------- post --------------------- //
+
 app.post('/nba',nba.addPlayer);
 
 // --------------------- put --------------------- //
 app.put('/nba/:id/vote', nba.incrementUpvotes);
 
 // --------------------- delete --------------------- //
-app.delete('/nba/:id', nba.deleteDonation);
+app.delete('/nba/:id', nba.deleteTeam);
 
 
 
