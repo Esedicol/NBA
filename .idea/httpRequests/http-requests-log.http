@@ -1,33 +1,298 @@
-PUT http://localhost:3000/nba/5bcf7c2b9b7e72ecbd00d86d/season
+PUT http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/season
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"team" : "Rockets", "player" : [ {"name" : "mawe", "seasons_played" : 3} ], "champs" : 5, "revenue" : 5000 }
-
-<> 2018-10-24T015411.200.json
+<> 2018-10-24T110516.200.html
 
 ###
 
-PUT http://localhost:3000/nba/5bcf7c2b9b7e72ecbd00d86d/win
+PUT http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/season
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"team" : "Rockets", "player" : [ {"name" : "mawe", "seasons_played" : 3} ], "champs" : 5, "revenue" : 5000 }
-
-<> 2018-10-24T015353.200.html
+<> 2018-10-24T110515.200.html
 
 ###
 
-PUT http://localhost:3000/nba/5bcf7c2b9b7e72ecbd00d86d/win
+PUT http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/season
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"team" : "Rockets", "player" : [ {"name" : "mawe", "seasons_played" : 3} ], "champs" : 5, "revenue" : 5000 }
+###
 
-<> 2018-10-24T015347.200.html
+PUT http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/season
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+###
+
+PUT http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/season
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-24T110436.200.html
+
+###
+
+PUT http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/season
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-24T110435.200.html
+
+###
+
+PUT http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/season
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-24T110426.200.html
+
+###
+
+PUT http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/season
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-24T110425.200.html
+
+###
+
+PUT http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/season
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-24T110422.200.html
+
+###
+
+PUT http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/season
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-24T110420.200.html
+
+###
+
+GET http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/season
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-24T110401.404.html
+
+###
+
+GET http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/season
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-24T110327.404.html
+
+###
+
+GET http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/season
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-24T110326.404.html
+
+###
+
+GET http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/season
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-24T110307.404.html
+
+###
+
+GET http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-24T110231.200.json
+
+###
+
+PUT http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/season
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+###
+
+PUT http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/season
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+###
+
+PUT http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/season
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-24T110115.200.html
+
+###
+
+PUT http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/season
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-24T110027.200.html
+
+###
+
+PUT http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/season
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-24T105931.200.html
+
+###
+
+PUT http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/season
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-24T105839.200.html
+
+###
+
+PUT http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/season
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-24T105805.200.html
+
+###
+
+PUT http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/season
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-24T105803.200.html
+
+###
+
+PUT http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/season
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-24T105737.200.html
+
+###
+
+PUT http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/season
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-24T105734.200.html
+
+###
+
+PUT http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/season
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-24T105358.200.html
+
+###
+
+PUT http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/season
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-24T105234.200.html
+
+###
+
+PUT http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/season
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-24T105159-1.200.html
+
+###
+
+PUT http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/season
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-24T105159.200.html
+
+###
+
+PUT http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/season
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-24T105158.200.html
+
+###
+
+PUT http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/season
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-24T105048.200.html
+
+###
+
+PUT http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/season
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-24T105047.200.html
+
+###
+
+PUT http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/season
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-24T105039.200.html
+
+###
+
+PUT http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/season
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-24T104921.200.json
 
 ###
 
@@ -36,42 +301,61 @@ Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"team" : "Rockets", "player" : [ {"name" : "mawe", "seasons_played" : 3} ], "champs" : 5, "revenue" : 5000 }
-
-<> 2018-10-24T015314.200.json
+<> 2018-10-24T104557.200.json
 
 ###
 
-GET http://localhost:3000/nba/5bcfc1329b7e72ecbd00d86f
+GET http://localhost:3000/players
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"team" : "Rockets", "player" : [ {"name" : "mawe", "seasons_played" : 3} ], "champs" : 5, "revenue" : 5000 }
-
-<> 2018-10-24T015258.200.json
+<> 2018-10-24T104442.200.json
 
 ###
 
-GET http://localhost:3000/nba/5bcfc1329b7e72ecbd00d86f
+GET http://localhost:3000/player
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"team" : "Rockets", "player" : [ {"name" : "mawe", "seasons_played" : 3} ], "champs" : 5, "revenue" : 5000 }
-
-<> 2018-10-24T015200.200.json
+<> 2018-10-24T104433.404.html
 
 ###
 
-DELETE http://localhost:3000/nba/5bcfc1329b7e72ecbd00d86f
+GET http://localhost:3000/nba/5bd0345e907be61c0a15c88c/rev
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"team" : "Rockets", "player" : [ {"name" : "mawe", "seasons_played" : 3} ], "champs" : 5, "revenue" : 5000 }
+<> 2018-10-24T103439.200.json
 
-<> 2018-10-24T014832.200.json
+###
+
+PUT http://localhost:3000/nba/5bd0345e907be61c0a15c88c/rev
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-24T103212.200.html
+
+###
+
+PUT http://localhost:3000/nba/5bd0345e907be61c0a15c88c/rev
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-24T103211.200.html
+
+###
+
+GET http://localhost:3000/nba/5bd0345e907be61c0a15c88c
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-24T103150.200.json
 
 ###
 
@@ -80,9 +364,7 @@ Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"team" : "Rockets", "player" : [ {"name" : "mawe", "seasons_played" : 3} ], "champs" : 5, "revenue" : 5000 }
-
-<> 2018-10-24T014805.200.json
+<> 2018-10-24T103135.200.json
 
 ###
 
@@ -91,438 +373,86 @@ Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"team" : "Rockets", "player" : [ {"name" : "mawe", "seasons_played" : 3} ], "champs" : 5, "revenue" : 5000 }
+{2}
 
-<> 2018-10-24T014659.200.json
+<> 2018-10-24T103122.400.html
 
 ###
 
-POST http://localhost:3000/nba/team
+GET http://localhost:3000/nba/5bd0345e907be61c0a15c88c
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"team" : "Rockets", "player" : [ {"name" : "mawe", "seasons_played" : 3} ], "champs" : 5, "revenue" : 5000 }
+{2}
+
+<> 2018-10-24T103112.400.html
 
 ###
 
-POST http://localhost:3000/nba/team
+GET http://localhost:3000/nba/5bd0345e907be61c0a15c88c
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"team" : "Rockets", "player" : [ {"name" : "mawe", "seasons_played" : 3} ], "champs" : 5, "revenue" : 5000 }
+{2}
+
+<> 2018-10-24T103109.400.html
 
 ###
 
-POST http://localhost:3000/nba/team
+PUT http://localhost:3000/nba/5bd0345e907be61c0a15c88c/rev
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"team" : "Rockets", "player" : [ {"name" : "mawe", "seasons_played" : 3} ], "champs" : 5, "revenue" : 5000 }
+{2}
+
+<> 2018-10-24T103037-2.400.html
 
 ###
 
-GET  http://localhost:3000/players
+PUT http://localhost:3000/nba/5bd0345e907be61c0a15c88c/rev
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"name" : "Emmanuel" , "seasons_played" : 2}
+{2}
 
-<> 2018-10-24T010503.200.json
+<> 2018-10-24T103037-1.400.html
 
 ###
 
-GET  http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/rev
+PUT http://localhost:3000/nba/5bd0345e907be61c0a15c88c/rev
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"name" : "Emmanuel" , "seasons_played" : 2}
+{2}
 
-<> 2018-10-24T010422.200.json
+<> 2018-10-24T103037.400.html
 
 ###
 
-GET  http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/rev
+GET http://localhost:3000/nba
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"name" : "Emmanuel" , "seasons_played" : 2}
+{"name" : "Emmanuel", "seasons_played" : 5 }
 
-<> 2018-10-24T010406.200.json
+<> 2018-10-24T102912.200.json
 
 ###
 
-GET  http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/rev
+GET http://localhost:3000/nba
 Accept: */*
 Cache-Control: no-cache
 Content-Type: application/json
 
-{"name" : "Emmanuel" , "seasons_played" : 2}
+{"name" : "Emmanuel", "seasons_played" : 5 }
 
-<> 2018-10-24T010317.200.json
-
-###
-
-GET  http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/rev
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Emmanuel" , "seasons_played" : 2}
-
-<> 2018-10-24T010200.200.json
-
-###
-
-GET  http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/rev
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Emmanuel" , "seasons_played" : 2}
-
-<> 2018-10-24T010023.200.json
-
-###
-
-GET  http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/rev
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Emmanuel" , "seasons_played" : 2}
-
-<> 2018-10-24T125626.200.json
-
-###
-
-GET  http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Emmanuel" , "seasons_played" : 2}
-
-<> 2018-10-24T125620.200.json
-
-###
-
-GET  http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/rev
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Emmanuel" , "seasons_played" : 2}
-
-<> 2018-10-24T125551.200.json
-
-###
-
-GET  http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/rev
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Emmanuel" , "seasons_played" : 2}
-
-<> 2018-10-24T125503.200.json
-
-###
-
-GET  http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/rev
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Emmanuel" , "seasons_played" : 2}
-
-<> 2018-10-24T125339.200.json
-
-###
-
-GET  http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/rev
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Emmanuel" , "seasons_played" : 2}
-
-<> 2018-10-24T125315.200.json
-
-###
-
-GET  http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/rev
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Emmanuel" , "seasons_played" : 2}
-
-###
-
-GET  http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/rev
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Emmanuel" , "seasons_played" : 2}
-
-###
-
-GET  http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/rev
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Emmanuel" , "seasons_played" : 2}
-
-###
-
-GET  http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/rev
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Emmanuel" , "seasons_played" : 2}
-
-###
-
-GET  http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/rev
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Emmanuel" , "seasons_played" : 2}
-
-<> 2018-10-24T125123.200.json
-
-###
-
-GET  http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/rev
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Emmanuel" , "seasons_played" : 2}
-
-<> 2018-10-24T125056.200.json
-
-###
-
-GET  http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/rev
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Emmanuel" , "seasons_played" : 2}
-
-<> 2018-10-24T125042.200.json
-
-###
-
-GET  http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/rev
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Emmanuel" , "seasons_played" : 2}
-
-<> 2018-10-24T125018.200.json
-
-###
-
-GET  http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/rev
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Emmanuel" , "seasons_played" : 2}
-
-<> 2018-10-24T124949.200.json
-
-###
-
-GET  http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/rev
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Emmanuel" , "seasons_played" : 2}
-
-<> 2018-10-24T124924.200.json
-
-###
-
-GET  http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/rev
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Emmanuel" , "seasons_played" : 2}
-
-<> 2018-10-24T124805.200.json
-
-###
-
-GET  http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/rev
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Emmanuel" , "seasons_played" : 2}
-
-<> 2018-10-24T124747.200.json
-
-###
-
-GET  http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/rev
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Emmanuel" , "seasons_played" : 2}
-
-###
-
-GET  http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/rev
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Emmanuel" , "seasons_played" : 2}
-
-<> 2018-10-24T124507.200.json
-
-###
-
-GET  http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/rev
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Emmanuel" , "seasons_played" : 2}
-
-<> 2018-10-24T124501.200.json
-
-###
-
-GET  http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/rev
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Emmanuel" , "seasons_played" : 2}
-
-<> 2018-10-24T124500.200.json
-
-###
-
-GET  http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/rev
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Emmanuel" , "seasons_played" : 2}
-
-<> 2018-10-24T124445.200.json
-
-###
-
-GET  http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/rev
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Emmanuel" , "seasons_played" : 2}
-
-###
-
-GET  http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/rev
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Emmanuel" , "seasons_played" : 2}
-
-<> 2018-10-24T124405.200.json
-
-###
-
-GET  http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/rev
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Emmanuel" , "seasons_played" : 2}
-
-<> 2018-10-24T124332.200.json
-
-###
-
-GET  http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/rev
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Emmanuel" , "seasons_played" : 2}
-
-###
-
-GET  http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/rev
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Emmanuel" , "seasons_played" : 2}
-
-###
-
-GET  http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/rev
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Emmanuel" , "seasons_played" : 2}
-
-<> 2018-10-24T124157.200.json
-
-###
-
-GET  http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c/rev
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Emmanuel" , "seasons_played" : 2}
-
-<> 2018-10-24T124110.200.json
-
-###
-
-GET  http://localhost:3000/nba/5bcf7bba9b7e72ecbd00d86c
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Emmanuel" , "seasons_played" : 2}
-
-<> 2018-10-24T124043.200.json
-
-###
-
-GET  http://localhost:3000/rev/5bcf7bba9b7e72ecbd00d86c
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Emmanuel" , "seasons_played" : 2}
-
-<> 2018-10-24T124032.404.html
+<> 2018-10-24T102158.200.json
 
 ###
 

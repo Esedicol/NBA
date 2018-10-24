@@ -137,21 +137,39 @@ router.putChampions = (req, res) => {
     });
 }
 
+router.putRev = (req, res) => {
+    Data.findById(req.params.id, function(err,team) {
+        if (err)
+            res.json({ message: 'Team NOT Found!', errmsg : err } );
+        else {
+            team.revenue *= 2;
+            team.save(function (err) {
+                if (err)
+                    res.json({ message: 'Team Championship status NOT UpVoted!', errmsg : err } );
+                else
+
+                    res.send(JSON.stringify(team,null,5));
+            });
+        }
+    });
+}
+
 router.putSeasonsPlayed = (req, res) => {
-    Data.find(req.params.id, function(err,team) {
+    Data.findById(req.params.id, function(err,team) {
         if (err) {
             res.json({message: 'Team NOT Found!', errmsg: err});
         }
         else {
-            team.player.seasons_played += 1;
-            team.save(function (err) {
-                if (err)
-                    res.json({message: 'Team Championship status NOT UpVoted!', errmsg: err});
-                else
+            for(var i = 0; i < 3; i++)
+                    team.player[i].seasons_played += 1;
+                    team.save(function (err) {
+                        if (err)
+                            res.json({message: 'Team Championship status NOT UpVoted!', errmsg: err});
+                        else
 
-                    res.send(JSON.stringify(team, null, 5));
-            });
-        }
+                            res.send(JSON.stringify(team, null, 5));
+                    });
+          }
     });
 }
 
@@ -177,9 +195,7 @@ router.addTeam = (req, res) => {
     var data = new Data();
 
     data.team = req.body.team;
-
     data.player = [];
-
     data.champs = req.body.champs;
     data.revenue = req.body.revenue;
 
@@ -195,15 +211,18 @@ router.addTeam = (req, res) => {
 router.addPlayer = (req, res) => {
     res.setHeader('Content-Type', 'application/json');
 
-    var data = new Data();
-
-    var player = {"name": req.body.name, "seasons_played": req.body.seasons_played};
-    data.player.push(player);
-    data.save(function(err) {
+    Data.findById(req.params.id, function(err,team) {
         if (err)
-            res.json({ message: 'Failed to add new Player!', errmsg : err } );
+            res.json({ message: 'ID NOT Found!', errmsg : err } );
         else
-            res.json({ message: 'New Player Successfully Added!', data: data });
+        team.player = team.player.push({"name": req.body.name, "seasons_played": req.body.seasons_played});
+
+        team.save(function(err) {
+            if (err)
+                res.send({ message: 'Failed to add new Player!', errmsg : err } );
+            else
+                res.json({ message: 'New Player Successfully Added!', data: data });
+        });
     });
 }
 

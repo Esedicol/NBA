@@ -1,7 +1,0 @@
-{
-  "message": "Team NOT Found!",
-  "errmsg": {
-    "message": "Parameter \"filter\" to find() must be an object, got 5bcf7c2b9b7e72ecbd00d86d",
-    "name": "ObjectParameterError"
-  }
-}

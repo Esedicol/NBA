@@ -1,3 +1,0 @@
-[
-  "{ _id: 5bcf7bba9b7e72ecbd00d86c,\n  team: 'Lakers',\n  player: \n   [ { name: 'Lebron James', seasons_played: 16 },\n     { name: 'Kobe Bryant', seasons_played: 14 },\n     { name: 'Lonzo Ball', seasons_played: 16 } ],\n  champs: 22,\n  revenue: 10000000 }"
-]

@@ -44,14 +44,22 @@ app.get('/nba/:id/rev', nba.getRevenue);
 
 
 // --------------------- post --------------------- //
+// add new team //
 app.post('/nba/team', nba.addTeam);
 
-app.post('/nba/player', nba.addPlayer);
+// add new player to an existing team //
+app.post('/nba/:id/player', nba.addPlayer);
 
 
 
 // --------------------- put --------------------- //
+// increase number of championship won by 1 //
 app.put('/nba/:id/win', nba.putChampions);
+
+// increase revenue of company by two fold //
+app.put('/nba/:id/rev', nba.putRev);
+
+// increase season played by each player by 1 //
 app.put('/nba/:id/season', nba.putSeasonsPlayed);
 
 
