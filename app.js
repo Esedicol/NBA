@@ -44,6 +44,9 @@ app.get('/nba/:id/rev', nba.getRevenue);
 
 
 // --------------------- post --------------------- //
+app.post('/nba/team', nba.addTeam);
+
+app.post('/nba/player', nba.addPlayer);
 
 
 

@@ -17,28 +17,6 @@ db.once('open', function () {
 });
 
 
-// --------------------- functions --------------------- //
-function getByValue(array, id) {
-    var result  = array.filter(function(obj){return obj.id;} );
-    return result ? result[0] : null; // or undefined
-}
-
-function sameTeamTotal(array, t) {
-
-    var total = 0;
-    for (var i = 0 ; i < array.length ; i++) {
-        let x = array[i].team;
-        if(t == x) {
-            total += 1;
-            res.send({message : 'Failed to process command. Try again pls.'});
-        }
-        else {
-            res.send({message : 'Function failed'});
-        }
-    }
-
-}
-
 
 function getTotalVotes(array) {
 
@@ -200,40 +178,45 @@ router.deleteTeam = (req, res) => {
 
 
 
+// --------------------- post methods --------------------- //
+
+router.addTeam = (req, res) => {
+
+    res.setHeader('Content-Type', 'application/json');
+
+    var data = new Data();
+
+    data.team = req.body.team;
+
+    data.player = [];
+
+    data.champs = req.body.champs;
+    data.revenue = req.body.revenue;
+
+    data.save(function(err) {
+        if (err)
+            res.json({ message: 'New Team NOT Added!', errmsg : err } );
+        else
+            res.json({ message: 'Team Successfully Added!', data: donation });
+    });
+}
+
 
 router.addPlayer = (req, res) => {
-    Data.findById(req.params.id, function (err, player) {
+
+    res.setHeader('Content-Type', 'application/json');
+
+    var data = new Data();
+
+    var player = {"name": req.body.name, "seasons_played": req.body.seasons_played};
+    data.player.push(player);
+    data.save(function(err) {
         if (err)
-            res.json({message: 'Item NOT Found!', errmsg: err});
-        else {
-            player['player'].push({name : req.params.name, seasons_played: req.params.seasons_played});
-            player.save(function (err) {
-                if (err)
-                    res.json({message: 'Player NOT Added!', errmsg: err});
-                else
-                    res.json({message: 'Player Successfully Added!', data: donation});
-            });
-        }
+            res.json({ message: 'Failed to add new Player!', errmsg : err } );
+        else
+            res.json({ message: 'New Player Successfully Added!', data: data });
     });
 }
-
-router.incrementUpvotes = (req, res) => {
-
-    Data.findById(req.params.id, function(err,donation) {
-        if (err)
-            res.json({ message: 'Donation NOT Found!', errmsg : err } );
-        else {
-            donation.champs += 1;
-            donation.save(function (err) {
-                if (err)
-                    res.json({ message: 'Donation NOT UpVoted!', errmsg : err } );
-                else
-                    res.json({ message: 'Donation Successfully Upvoted!', data: donation });
-            });
-        }
-    });
-}
-
 
 
 module.exports = router;

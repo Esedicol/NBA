@@ -1,3 +1,30 @@
+POST http://localhost:3000/nba/team
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"team" : "Rockets", "player" : [ {"name" : "mawe", "seasons_played" : 3} ], "champs" : 5, "revenue" : 5000 }
+
+###
+
+POST http://localhost:3000/nba/team
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"team" : "Rockets", "player" : [ {"name" : "mawe", "seasons_played" : 3} ], "champs" : 5, "revenue" : 5000 }
+
+###
+
+POST http://localhost:3000/nba/team
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"team" : "Rockets", "player" : [ {"name" : "mawe", "seasons_played" : 3} ], "champs" : 5, "revenue" : 5000 }
+
+###
+
 GET  http://localhost:3000/players
 Accept: */*
 Cache-Control: no-cache
@@ -496,39 +523,6 @@ Content-Type: application/json
 {"name" : "Emmanuel" , "seasons_played" : 2}
 
 <> 2018-10-24T123553.200.json
-
-###
-
-GET  http://localhost:3000/team
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Emmanuel" , "seasons_played" : 2}
-
-<> 2018-10-24T123548.404.html
-
-###
-
-GET  http://localhost:3000/name
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Emmanuel" , "seasons_played" : 2}
-
-<> 2018-10-24T123544.404.html
-
-###
-
-GET  http://localhost:3000/player
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"name" : "Emmanuel" , "seasons_played" : 2}
-
-<> 2018-10-24T123534.200.json
 
 ###
 
