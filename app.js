@@ -66,6 +66,8 @@ app.put('/nba/:id/season', nba.putSeasonsPlayed);
 // --------------------- delete --------------------- //
 app.delete('/nba/:id', nba.deleteTeam);
 
+app.delete('nba/player/:id', nba.deletePlayer);
+
 
 
 // catch 404 and forward to error handler

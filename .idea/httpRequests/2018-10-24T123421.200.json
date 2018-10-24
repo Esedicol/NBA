@@ -1,0 +1,69 @@
+[
+  {
+    "_id": "5bd057df9b7e72ecbd00d871",
+    "team": "Lakers",
+    "player": [
+      {
+        "name": "Lebron James",
+        "seasons_played": 8
+      },
+      {
+        "name": "Kobe Bryant",
+        "seasons_played": 4
+      },
+      {
+        "name": "Lonzo BallL",
+        "seasons_played": 6
+      }
+    ],
+    "champs": 11,
+    "revenue": 10000000
+  },
+  {
+    "_id": "5bd058209b7e72ecbd00d872",
+    "team": "Cavs",
+    "player": [
+      {
+        "name": "Jordan Clarkson",
+        "seasons_played": 0
+      },
+      {
+        "name": "Kevin Love",
+        "seasons_played": 1
+      },
+      {
+        "name": "Dwane Wade",
+        "seasons_played": 2
+      }
+    ],
+    "champs": 5,
+    "revenue": 20000000
+  },
+  {
+    "_id": "5bd058759b7e72ecbd00d873",
+    "team": "Warriors",
+    "player": [
+      {
+        "name": "Stephen Cusrry",
+        "seasons_played": 5
+      },
+      {
+        "name": "Kevin Durant",
+        "seasons_played": 11
+      },
+      {
+        "name": "Khlay Thompson",
+        "seasons_played": 3
+      }
+    ],
+    "champs": 9,
+    "revenue": 30000000
+  },
+  {
+    "_id": "5bd058a39b7e72ecbd00d874",
+    "team": "Bulls",
+    "player": [],
+    "champs": 2,
+    "revenue": 40000000
+  }
+]

@@ -160,7 +160,7 @@ router.putSeasonsPlayed = (req, res) => {
             res.json({message: 'Team NOT Found!', errmsg: err});
         }
         else {
-            for(var i = 0; i < 3; i++)
+            for(var i = 0; i < team.player.length; i++)
                     team.player[i].seasons_played += 1;
                     team.save(function (err) {
                         if (err)
@@ -184,8 +184,30 @@ router.deleteTeam = (req, res) => {
     });
 }
 
+function remove(array, element) {
+    const index = array.indexOf(element);
 
+    if (index !== -1) {
+        array.splice(index, 1);
+    }
+}
+router.deletePlayer = (req, res) => {
+    Data.findById(req.params.id, function(err,team) {
+        if (err) {
+            res.json({message: 'ERROR!', errmsg: err});
+        }
+        else {
+            remove(team,team.player[0]);
+            team.save(function (err) {
+                if (err)
+                    res.json({message: 'Team Championship status NOT UpVoted!', errmsg: err});
+                else
 
+                    res.send(JSON.stringify(team, null, 5));
+            });
+        }
+    });
+}
 
 // --------------------- post methods --------------------- //
 
