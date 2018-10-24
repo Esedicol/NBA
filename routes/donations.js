@@ -120,7 +120,7 @@ router.getRevenue = (req, res) => {
 }
 
 // --------------------- put methods --------------------- //
-router.putChamps = (req, res) => {
+router.putChampions = (req, res) => {
     Data.findById(req.params.id, function(err,team) {
         if (err)
             res.json({ message: 'Team NOT Found!', errmsg : err } );
@@ -137,7 +137,7 @@ router.putChamps = (req, res) => {
     });
 }
 
-router.putSeason = (req, res) => {
+router.putSeasonsPlayed = (req, res) => {
     Data.find(req.params.id, function(err,team) {
         if (err) {
             res.json({message: 'Team NOT Found!', errmsg: err});

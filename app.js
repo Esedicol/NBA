@@ -51,8 +51,8 @@ app.post('/nba/player', nba.addPlayer);
 
 
 // --------------------- put --------------------- //
-app.put('/nba/:id/win', nba.putChamps);
-app.put('/nba/:id/season', nba.putSeason);
+app.put('/nba/:id/win', nba.putChampions);
+app.put('/nba/:id/season', nba.putSeasonsPlayed);
 
 
 // --------------------- delete --------------------- //

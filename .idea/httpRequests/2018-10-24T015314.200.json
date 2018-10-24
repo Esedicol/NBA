@@ -64,5 +64,33 @@
     ],
     "champs": 2,
     "revenue": 89767777
+  },
+  {
+    "_id": "5bcfc01128d9e41b1f6d8e46",
+    "player": [],
+    "team": "Rockets",
+    "champs": 5,
+    "revenue": 5000,
+    "__v": 0
+  },
+  {
+    "_id": "5bcfc030b5ae621b37b5bf28",
+    "player": [
+      {
+        "_id": "5bcfc030b5ae621b37b5bf29"
+      }
+    ],
+    "team": "Rockets",
+    "champs": 5,
+    "revenue": 5000,
+    "__v": 0
+  },
+  {
+    "_id": "5bcfc0544bf4701b3f411346",
+    "player": [],
+    "team": "Rockets",
+    "champs": 5,
+    "revenue": 5000,
+    "__v": 0
   }
 ]
