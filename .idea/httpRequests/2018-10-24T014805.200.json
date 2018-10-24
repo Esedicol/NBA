@@ -1,0 +1,116 @@
+[
+  {
+    "_id": "5bcf7bba9b7e72ecbd00d86c",
+    "team": "Lakers",
+    "player": [
+      {
+        "name": "Lebron James",
+        "seasons_played": 16
+      },
+      {
+        "name": "Kobe Bryant",
+        "seasons_played": 14
+      },
+      {
+        "name": "Lonzo Ball",
+        "seasons_played": 16
+      }
+    ],
+    "champs": 22,
+    "revenue": 10000000
+  },
+  {
+    "_id": "5bcf7c2b9b7e72ecbd00d86d",
+    "team": "Warriors",
+    "player": [
+      {
+        "name": "Stephen Curry",
+        "seasons_played": 10
+      },
+      {
+        "name": "Kevin Durant",
+        "seasons_played": 11
+      },
+      {
+        "name": "Khlay Thompson",
+        "seasons_played": 8
+      },
+      {
+        "_id": "5bcf1bf239069d10394e58c5"
+      },
+      {
+        "_id": "5bcf1c4a1c198a10661a74d6"
+      }
+    ],
+    "champs": 3,
+    "revenue": 2400000
+  },
+  {
+    "_id": "5bcf7c809b7e72ecbd00d86e",
+    "team": "Cavs",
+    "player": [
+      {
+        "name": "Jordan Clarkson",
+        "seasons_played": 4
+      },
+      {
+        "name": "Kevin Love",
+        "seasons_played": 10
+      },
+      {
+        "name": "Kyrie Irving",
+        "seasons_played": 8
+      }
+    ],
+    "champs": 2,
+    "revenue": 89767777
+  },
+  {
+    "_id": "5bcfc01128d9e41b1f6d8e46",
+    "player": [],
+    "team": "Rockets",
+    "champs": 5,
+    "revenue": 5000,
+    "__v": 0
+  },
+  {
+    "_id": "5bcfc030b5ae621b37b5bf28",
+    "player": [
+      {
+        "_id": "5bcfc030b5ae621b37b5bf29"
+      }
+    ],
+    "team": "Rockets",
+    "champs": 5,
+    "revenue": 5000,
+    "__v": 0
+  },
+  {
+    "_id": "5bcfc0544bf4701b3f411346",
+    "player": [],
+    "team": "Rockets",
+    "champs": 5,
+    "revenue": 5000,
+    "__v": 0
+  },
+  {
+    "_id": "5bcfc1329b7e72ecbd00d86f",
+    "team": "Lakers",
+    "player": [
+      {
+        "name": "Lebron James",
+        "seasons_played": 16
+      },
+      {
+        "name": "Kobe Bryant",
+        "seasons_played": 14
+      },
+      {
+        "name": "Lonzo Ball",
+        "seasons_played": 16
+      }
+    ],
+    "champs": 22,
+    "revenue": 10000000
+  }
+]

@@ -19,13 +19,11 @@ db.once('open', function () {
 
 
 function getTotalVotes(array) {
-
     array.forEach(function(obj) { var totalVotes = obj.player });
     return totalVotes;
 }
 
 router.findTotalVotes = (req, res) => {
-
     Data.find(function(err, donations) {
         if (err)
             res.send(err);
@@ -54,7 +52,6 @@ router.getDisplay = (req, res) => {
 }
 
 router.getNumberOfTeams = (req, res) => {
-
     res.setHeader('Content-Type', 'application/json');
 
     Data.find(function(err, players) {
@@ -67,7 +64,6 @@ router.getNumberOfTeams = (req, res) => {
 }
 
 router.getTeam = (req, res) => {
-
     res.setHeader('Content-Type', 'application/json');
 
     Data.find({ "_id" : req.params.id },function(err, team) {
@@ -91,7 +87,6 @@ function getPlayer(array) {
 
 
 router.getAllPlayers = (req, res) => {
-
     res.setHeader('Content-Type', 'application/json');
 
     Data.find(function(err, players) {
@@ -113,7 +108,6 @@ function getRev(array) {
 }
 
 router.getRevenue = (req, res) => {
-
     res.setHeader('Content-Type', 'application/json');
 
     Data.find({ "_id" : req.params.id },function(err, team) {
@@ -127,7 +121,6 @@ router.getRevenue = (req, res) => {
 
 // --------------------- put methods --------------------- //
 router.putChamps = (req, res) => {
-
     Data.findById(req.params.id, function(err,team) {
         if (err)
             res.json({ message: 'Team NOT Found!', errmsg : err } );
@@ -145,7 +138,6 @@ router.putChamps = (req, res) => {
 }
 
 router.putSeason = (req, res) => {
-
     Data.find(req.params.id, function(err,team) {
         if (err) {
             res.json({message: 'Team NOT Found!', errmsg: err});
@@ -166,7 +158,6 @@ router.putSeason = (req, res) => {
 
 // --------------------- delete methods --------------------- //
 router.deleteTeam = (req, res) => {
-
     Data.findByIdAndRemove(req.params.id, function(err) {
         if (err)
             res.json({ message: 'Team NOT DELETED!', errmsg : err } );
@@ -181,7 +172,6 @@ router.deleteTeam = (req, res) => {
 // --------------------- post methods --------------------- //
 
 router.addTeam = (req, res) => {
-
     res.setHeader('Content-Type', 'application/json');
 
     var data = new Data();
@@ -203,7 +193,6 @@ router.addTeam = (req, res) => {
 
 
 router.addPlayer = (req, res) => {
-
     res.setHeader('Content-Type', 'application/json');
 
     var data = new Data();
