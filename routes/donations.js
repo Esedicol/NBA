@@ -111,6 +111,7 @@ function getPlayer(array) {
     return data;
 }
 
+
 router.getAllPlayers = (req, res) => {
 
     res.setHeader('Content-Type', 'application/json');
@@ -124,6 +125,15 @@ router.getAllPlayers = (req, res) => {
 }
 
 
+function getRev(array) {
+    var data = [];
+    for ( var i = 0; i < array.length; i++)
+    {
+        data.push(array[i].revenue).toString();
+    }
+    return data;
+}
+
 router.getRevenue = (req, res) => {
 
     res.setHeader('Content-Type', 'application/json');
@@ -132,13 +142,7 @@ router.getRevenue = (req, res) => {
         if (err)
             res.json({ message: 'Revenue NOT Found!', errmsg : err } );
         else
-            var d = [];
-            for(var i = 0; i < team.length; i++)
-            {
-                d = team[i];
-                res.send(d);
-            }
-
+            res.json('The Revenue for ' + req.params.id + ' is =>' + ' ' + getRev(team) );
 
     });
 }

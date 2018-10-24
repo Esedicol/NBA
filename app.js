@@ -35,8 +35,10 @@ app.get('/nba/total', nba.getNumberOfTeams);
 app.get('/nba/:id', nba.getTeam);
 
 // get all players on a team //
-app.get('/player', nba.getAllPlayers);
-app.get('revenue/:id', nba.getRevenue);
+app.get('/players', nba.getAllPlayers);
+
+// get the revenue of a item //
+app.get('/nba/:id/rev', nba.getRevenue);
 
 
 
