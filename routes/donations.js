@@ -17,25 +17,6 @@ db.once('open', function () {
 });
 
 
-
-function getTotalVotes(array) {
-    array.forEach(function(obj) { var totalVotes = obj.player });
-    return totalVotes;
-}
-
-router.findTotalVotes = (req, res) => {
-    Data.find(function(err, donations) {
-        if (err)
-            res.send(err);
-        else
-            res.json({ totalvotes : getTotalVotes(donations) });
-    });
-}
-
-
-
-
-
 //  --------------------- get methods --------------------- //
 router.getDisplay = (req, res) => {
     // Return a JSON representation of our list
@@ -68,7 +49,7 @@ router.getTeam = (req, res) => {
 
     Data.find({ "_id" : req.params.id },function(err, team) {
         if (err)
-            res.json({ message: 'Donation NOT Found!', errmsg : err } );
+            res.json({ message: 'Team NOT Found!', errmsg : err } );
         else
             res.send(JSON.stringify(team,null,5));
     });
@@ -91,7 +72,7 @@ router.getAllPlayers = (req, res) => {
 
     Data.find(function(err, players) {
         if (err)
-            res.send({message : 'Failed to count players'});
+            res.send({message : 'Failed to get players'});
         else
             res.send(JSON.stringify(getPlayer(players),null,5));
     });
@@ -123,7 +104,7 @@ router.getRevenue = (req, res) => {
 router.putChampions = (req, res) => {
     Data.findById(req.params.id, function(err,team) {
         if (err)
-            res.json({ message: 'Team NOT Found!', errmsg : err } );
+            res.json({ message: 'Well Done on winning!', errmsg : err } );
         else {
             team.champs += 1;
             team.save(function (err) {
@@ -140,12 +121,12 @@ router.putChampions = (req, res) => {
 router.putRev = (req, res) => {
     Data.findById(req.params.id, function(err,team) {
         if (err)
-            res.json({ message: 'Team NOT Found!', errmsg : err } );
+            res.json({ message: 'Failed to up Team Revenue', errmsg : err } );
         else {
             team.revenue *= 2;
             team.save(function (err) {
                 if (err)
-                    res.json({ message: 'Team Championship status NOT UpVoted!', errmsg : err } );
+                    res.json({ message: 'Failed to increase Revenue!', errmsg : err } );
                 else
 
                     res.send(JSON.stringify(team,null,5));
@@ -157,14 +138,14 @@ router.putRev = (req, res) => {
 router.putSeasonsPlayed = (req, res) => {
     Data.findById(req.params.id, function(err,team) {
         if (err) {
-            res.json({message: 'Team NOT Found!', errmsg: err});
+            res.json({message: 'Failed!', errmsg: err});
         }
         else {
             for(var i = 0; i < team.player.length; i++)
                     team.player[i].seasons_played += 1;
                     team.save(function (err) {
                         if (err)
-                            res.json({message: 'Team Championship status NOT UpVoted!', errmsg: err});
+                            res.json({message: 'Failed!', errmsg: err});
                         else
 
                             res.send(JSON.stringify(team, null, 5));

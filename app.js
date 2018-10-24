@@ -64,8 +64,10 @@ app.put('/nba/:id/season', nba.putSeasonsPlayed);
 
 
 // --------------------- delete --------------------- //
+// delete team //
 app.delete('/nba/:id', nba.deleteTeam);
 
+// delete player //
 app.delete('nba/player/:id', nba.deletePlayer);
 
 
