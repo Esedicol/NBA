@@ -1,10 +1,11 @@
 let Data = require('../models/data');
 let express = require('express');
 let router = express.Router();
-
-// --------------------- connect to mongo database --------------------- //
 let mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/nba');
+
+// --------------------- connect to mlab --------------------- //
+var mongodbUri = 'mongodb://esedicol:20072377jp@ds139883.mlab.com:39883/nba'
+mongoose.connect(mongodbUri);
 
 let db = mongoose.connection;
 
